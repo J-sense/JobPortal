@@ -5,20 +5,7 @@ import icons3 from "../assets/icons/Location.png";
 import icons4 from "../assets/icons/marketing.png";
 
 const Category = () => {
-  const is = [
-    {
-      img: icons1,
-    },
-    {
-      img: icon2,
-    },
-    {
-      img: icons3,
-    },
-    {
-      img: icons4,
-    },
-  ];
+
   const [category, setCategory] = useState([]);
   useEffect(() => {
     fetch("categories.json")
